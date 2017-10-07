@@ -1,0 +1,138 @@
+/*!
+ * portfolio.css - main style sheet of popoway.me (https://popoway.me/)
+ * Copyright 2017 popoway. Licensed under the MIT license.
+ * (https://github.com/popoway/popoway-me/blob/master/LICENSE)
+ */
+  body {
+      font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.8;
+  }
+  a:link, a:visited {
+      color: #A6A6A6;
+      font-style: normal;
+      text-decoration: none;
+  }
+  p {font-size: 16px;}
+  .fa-heart {font-size: 14px;}
+  .social-logo-medium {
+      color: #2f2f2f; /* Black Gray */
+      font-size: 50px;
+  }
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #84AAFA; /* Light Blue */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      border-color: transparent;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+/* Help screen reader by hiding accessible descriptions */
+  .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+
+/* Slide animation start */
+  .slideanim {visibility:hidden;}
+  .slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+  }
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+  @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+  }
+  @-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+  }
+
+/* Circle avatar image animation start */
+  .img-circle {
+    -webkit-animation: fadein 0.8s; /* Safari and Chrome */
+    -moz-animation: fadein 0.8s; /* Firefox */
+    -ms-animation: fadein 0.8s; /* Internet Explorer */
+    -o-animation: fadein 0.8s; /* Opera */
+    animation: fadein 0.8s;
+  }
+    
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+/* Firefox */
+  @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+/* Safari and Chrome */
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+/* Internet Explorer */
+  @-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }​
+
+/* Opera */
+  @-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
