@@ -15,8 +15,15 @@
   <meta property="og:site_name" content="popoway's website" />
   <meta property="og:description" content="This is popoway's personal website." />
   <meta property="og:image" content="https://static.popoway.me/popoway.me/assets/avatar_1000px.png" />
-  <meta property="og:type" content="profile" /> 
+  <meta property="og:type" content="profile" />
   <meta property="fb:profile_id" content="iam.Ming.Lei" />
+  <meta property="article:publisher" content="https://www.facebook.com/selfscore" />
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="popoway.me">
+  <meta name="twitter:title" content="popoway's website">
+  <meta name="twitter:description" content="This is popoway's personal website.">
+  <meta name="twitter:site" content="@popoway9">
 
   <!-- General meta tags -->
   <meta name="description" content="This is popoway's personal website.">
@@ -27,13 +34,13 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Sun Oct 8 6:15:18 UTC 2017 -->
+  <!-- Date: Fri Oct 13 5:17:53 UTC 2017 -->
 
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.0.7.206">
-  <meta name="popowaycloud-git-timestamp" content="1507443318">
+  <meta name="popowaycloud-git-revision" content="1.1.0.212-rc.1">
+  <meta name="popowaycloud-git-timestamp" content="1507871873">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css">
@@ -85,7 +92,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">popoway.me</a>
     </div>
@@ -104,7 +111,7 @@
   <h3 class="margin">Who Am I?</h3>
   <img src="https://static.popoway.me/popoway.me/assets/avatar_350px.png" srcset="https://static.popoway.me/popoway.me/assets/avatar_350px.png 1x, https://static.popoway.me/popoway.me/assets/avatar_700px.png 2x, https://static.popoway.me/popoway.me/assets/avatar_1050px.png 3x" class="img-responsive img-circle margin" style="display:inline" aria-label="popoway's avatar, handmade Detective Conan figure, white background" title="popoway's avatar" alt="popoway's avatar, handmade Detective Conan figure, white background" width="350" height="350">
   <h3 class="slideanim">I'm popoway.</h3>
-  <h5 class="slideanim">IPA: |ˈpɑpəˌweɪ|</h5>
+  <h5 class="slideanim" title="International Phonetic Alphabet" aria-hidden="true">IPA: |ˈpɑpəˌweɪ|</h5>
 </div>
 
 <!-- Second Container -->
@@ -121,7 +128,7 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center" id="where">    
+<div class="container-fluid bg-3 text-center" id="where">
   <h3 class="slideanim">Where To Find Me?</h3>
   <h5 class="slideanim">Click usernames to move forward.</h5><br>
   <br>
@@ -169,7 +176,7 @@
       <h4>Keybase</h4>
       <p><a href="https://go.popoway.cloud/sconkb">@popoway</a></p>
     </div>
-<!-- Trigger the WeChat QR code popup with a "button" -->
+    <!-- Trigger the WeChat QR code popup with a "button" -->
     <div class="col-sm-4 slideanim" data-toggle="modal" data-target="#WeChatQRPopup">
       <i class="fa fa-weixin social-logo-medium" aria-hidden="true"></i>
       <h4>WeChat</h4>
@@ -190,24 +197,18 @@
   </a></div>
     <div class="col-sm-4 col-sm-pull-4 text-left">Powered by popowayCloud.</div>
     <!-- Responsive margin of right footer-->
-    <!-- Adapt to larger screen -->
+    <!-- 1.Adapt to larger screen -->
     <div class="col-sm-4 hidden-xs text-right">
-      Brewed with <i class="fa fa-heart" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>. 
+      Brewed with <i class="fa fa-heart" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>.
     </div>
-    <!-- Adapt to mobile screen -->
+    <!-- 2.Adapt to mobile screen -->
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl text-left">
-      Brewed with <i class="fa fa-heart" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>. 
+      Brewed with <i class="fa fa-heart" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>.
     </div>
   </div>
 </footer>
 
-<!-- Load JavaScript: Defer loading js by putting links to footer -->
-<script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Call Scroll js -->
-<script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js"></script>
-
-<!-- WeChat QR popup -->
+<!-- WeChat QR popup starts-->
 <div id="WeChatQRPopup" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -231,5 +232,12 @@
 
   </div>
 </div>
+<!-- WeChat QR popup ends-->
+
+<!-- Load JavaScript: Defer loading js by putting src to footer -->
+<script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+<script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js" defer></script><!-- Call Scroll js -->
+
 </body>
 </html>
