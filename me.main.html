@@ -34,13 +34,13 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Sun Oct 15 6:25:01 UTC 2017 -->
+  <!-- Date: Sun Oct 15 7:20:44 UTC 2017 -->
 
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.1.0.216-rc.2">
-  <meta name="popowaycloud-git-timestamp" content="1508048701">
+  <meta name="popowaycloud-git-revision" content="1.1.0.217-rc.3">
+  <meta name="popowaycloud-git-timestamp" content="1508052044">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css">
@@ -89,18 +89,24 @@
   <!-- Note that it's embedded in the navbar -->
   <noscript>
     <style>
-        #enable-js {
-        margin: 0;
-        padding: 12px 15px;
-        background-color: #FFC107;
-        color: #000;
-        text-align: center;
-        font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-        font-size: 13px;
-	letter-spacing: 1px;
-      }
+        .noscript-banner {
+            margin: 0;
+            padding: 12px 15px;
+            color: #000;
+            text-align: center;
+            font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .enable-js {
+            background-color: #FFC107; /* Dark Yellow */
+        }
+        .cookie-banner-nojs {
+            background-color: #E336BB; /* Pink */
+        }
     </style>
-    <p id="enable-js">popoway.me requires to enable JavaScript for complete experience. <a href="https://go.popoway.cloud/hteajs/" target="_blank" rel="noopener">Here is how.</a></p>
+    <p class="noscript-banner enable-js">popoway.me requires to enable JavaScript for complete experience. <a href="https://go.popoway.cloud/hteajs/" target="_blank" rel="noopener">Here is how.</a></p>
+    <p class="noscript-banner cookie-banner-nojs">popowayCloud Blog uses cookies to improve your experiences. By continuing we assume your permission to deploy cookies, as detailed in our <a tabindex="0" target="_blank"  rel="noopener" href="https://go.popoway.cloud/cookie/">privacy policy.</a></p>
   </noscript>
 
   <div class="container">
