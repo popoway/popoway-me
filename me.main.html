@@ -34,13 +34,13 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Fri Oct 13 5:17:53 UTC 2017 -->
+  <!-- Date: Sun Oct 15 5:24:08 UTC 2017 -->
 
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.1.0.212-rc.1">
-  <meta name="popowaycloud-git-timestamp" content="1507871873">
+  <meta name="popowaycloud-git-revision" content="1.1.0.213-rc.1">
+  <meta name="popowaycloud-git-timestamp" content="1508045048">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css">
@@ -63,6 +63,22 @@
       }
     </style>
   </noscript>
+  
+  <!-- pC Analytics JavaScript Tracker -->
+  <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+       var u="https://a.popoway.cloud/";
+       _paq.push(['setTrackerUrl', u+'piwik.php']);
+       _paq.push(['setSiteId', '2']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+       })();
+  </script>
+  <!-- End pC Analytics JavaScript Tracker Code -->
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myScrollspy" data-offset="10">
@@ -238,6 +254,10 @@
 <script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 <script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
 <script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js" defer></script><!-- Call Scroll js -->
+
+<!-- pC Analytics Image Tracker -->
+<noscript><p><img src="//a.popoway.cloud/piwik.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End pC Analytics Image Tracker -->
 
 </body>
 </html>
