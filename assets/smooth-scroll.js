@@ -36,4 +36,9 @@ $(window).scroll(function() {
       $(this).addClass("slide");
     }
   });
+});
+
+// Initialize Bootstrap tooltip
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
 })
