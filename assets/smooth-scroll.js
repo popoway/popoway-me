@@ -41,4 +41,40 @@ $(window).scroll(function() {
 // Initialize Bootstrap tooltip
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
+});
+
+// Initialize i18next module
+$(window).on("load", function(){
+  //import i18next from 'i18next';
+  //import Backend from 'i18next-xhr-backend';
+  i18next
+    .use(i18nextXHRBackend)
+    .init({
+      lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+      fallbackLng: 'en',
+      debug: true,
+      backend: {
+        // for all available options read the backend's repository readme file
+        loadPath: 'assets/locales/{{lng}}/{{ns}}.json',
+        crossDomain: true
+      },
+      ns: ['common', 'portfolio'],
+      defaultNS: 'portfolio',
+    }, function(err, t) {
+      // init set content
+      jqueryI18next
+        .init(i18next, $, {
+          tName: 't', // --> appends $.t = i18next.t
+          i18nName: 'i18n', // --> appends $.i18n = i18next
+          handleName: 'localize', // --> appends $(selector).localize(opts);
+          selectorAttr: 'data-i18n', // selector for translating elements
+          targetAttr: 'i18n-target', // data-() attribute to grab target element to translate (if diffrent then itself)
+          optionsAttr: 'i18n-options', // data-() attribute that contains options, will load/set if useOptionsAttr = true
+          useOptionsAttr: false, // see optionsAttr
+          parseDefaultValueFromContent: true // parses default values from content ele.val or ele.text
+        });
+      // start localizing, details:
+      // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+      $('.nav').localize();
+    });
 })

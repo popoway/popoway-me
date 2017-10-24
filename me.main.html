@@ -34,12 +34,12 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Mon Oct 23 5:06:07 UTC 2017 -->
+  <!-- Date: Mon Oct 23 22:25:49 UTC 2017 -->
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.1.0.225-rc.4">
-  <meta name="popowaycloud-git-timestamp" content="1508735167">
+  <meta name="popowaycloud-git-revision" content="1.1.0.226-rc.4">
+  <meta name="popowaycloud-git-timestamp" content="1508797549">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css" integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
@@ -62,6 +62,10 @@
       }
     </style>
   </noscript>
+  
+  <!--Initialize i18next-->
+  <script type="text/javascript">
+   </script>
   
   <!-- pC Analytics JavaScript Tracker -->
   <script type="text/javascript">
@@ -119,9 +123,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who">WHO</a></li>
-        <li><a href="#why">WHY</a></li>
-        <li><a href="#where">WHERE</a></li>
+        <li><a href="#who" data-i18n="common:nav.who"></a></li>
+        <li><a href="#why" data-i18n="common:nav.why"></a></li>
+        <li><a href="#where" data-i18n="common:nav.where"></a></li>
       </ul>
     </div>
   </div>
@@ -258,11 +262,12 @@
 <!-- Load JavaScript: Defer loading js by putting src to footer -->
 <script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" defer integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 <script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" defer integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js" defer integrity="sha256-0M2LUPZzJL1LyBYI7eyum8jIxMYNwNVkqP1SXaC8I9o=" crossorigin="anonymous"></script><!-- Call Scroll js -->
-<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js" defer  integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
+<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js" integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" defer crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
+<script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js" defer integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
 <script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" defer integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
+<!--<script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js" defer integrity="sha256-0M2LUPZzJL1LyBYI7eyum8jIxMYNwNVkqP1SXaC8I9o=" crossorigin="anonymous"></script><!-- Call Scroll js -->-->
+<script src="assets/smooth-scroll.js" defer></script><!-- Call Scroll js -->
 <script id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-message="popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy." src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js"  defer integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
-
 <!-- pC Analytics Image Tracker -->
 <noscript><p><img src="https://a.popoway.cloud/pc-analy.main.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End pC Analytics Image Tracker -->
