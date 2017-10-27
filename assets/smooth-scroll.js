@@ -44,7 +44,7 @@ $(document).ready(function(){
 });
 
 // Initialize i18next module
-$(window).on("load", function(){
+$(document).ready(function(){
   //import i18next from 'i18next';
   //import Backend from 'i18next-xhr-backend';
   i18next
@@ -59,7 +59,7 @@ $(window).on("load", function(){
         crossDomain: true
       },
       ns: ['common', 'portfolio'],
-      defaultNS: 'portfolio',
+      defaultNS: 'portfolio'
     }, function(err, t) {
       // init set content
       jqueryI18next
@@ -75,6 +75,10 @@ $(window).on("load", function(){
         });
       // start localizing, details:
       // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+      $('#cookiebanner').localize();
+      $('.ctrl').localize();
       $('.nav').localize();
+      $('.container-fluid').localize();
+      $('#WeChatQRPopup').localize();
     });
 })

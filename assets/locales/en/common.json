@@ -1,4 +1,12 @@
 {
+  "cookiebanner": {
+    "message": "popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy.",
+    "more": "Learn more"
+  },
+  "ctrl": {
+    "to_top": "To Top",
+    "close": "Close"
+  },
   "nav": {
     "who": "WHO",
     "why": "WHY",

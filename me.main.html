@@ -34,12 +34,12 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Tue Oct 24 1:56:12 UTC 2017 -->
+  <!-- Date: Fri Oct 27 0:03:31 UTC 2017 -->
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.1.0.227-rc.4">
-  <meta name="popowaycloud-git-timestamp" content="1508810172">
+  <meta name="popowaycloud-git-revision" content="1.1.0.228-rc.4">
+  <meta name="popowaycloud-git-timestamp" content="1509062611">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css" integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
@@ -114,7 +114,7 @@
 
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="ctrl navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -123,9 +123,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who" data-i18n="common:nav.who"><noscript>WHO</noscript></a></li>
-        <li><a href="#why" data-i18n="common:nav.why"><noscript>WHY</noscript></a></li>
-        <li><a href="#where" data-i18n="common:nav.where"><noscript>WHERE</noscript></a></li>
+        <li><a href="#who" data-i18n="common:nav.who">WHO</a></li>
+        <li><a href="#why" data-i18n="common:nav.why">WHY</a></li>
+        <li><a href="#where" data-i18n="common:nav.where">WHERE</a></li>
       </ul>
     </div>
   </div>
@@ -133,7 +133,7 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
-  <h3 class="margin">Who Am I?</h3>
+  <h3 class="margin" data-i18n="portfolio:container-fluid.who_am_i">Who Am I?</h3>
   <img src="https://static.popoway.me/popoway.me/assets/avatar_350px.png" srcset="https://static.popoway.me/popoway.me/assets/avatar_350px.png 1x, https://static.popoway.me/popoway.me/assets/avatar_700px.png 2x, https://static.popoway.me/popoway.me/assets/avatar_1050px.png 3x" class="img-responsive img-circle margin" style="display:inline" data-toggle="tooltip" data-placement="bottom" aria-label="popoway's avatar, handmade Detective Conan figure, white background" title="popoway's avatar" alt="popoway's avatar, handmade Detective Conan figure, white background" width="350" height="350">
   <h3 class="slideanim">I'm popoway.</h3>
   <h5 class="slideanim" data-toggle="tooltip" title="International Phonetic Alphabet" aria-hidden="true">IPA: |ˈpɑpəˌweɪ|</h5>
@@ -141,9 +141,9 @@
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center" id="why">
-  <h3 class="margin slideanim">Why There's Such A Page?</h3>
+  <h3 class="margin slideanim" data-i18n="container-fluid.why_there_is_page">Why There's Such A Page?</h3>
   <div class="col-sm-3 hidden-xs popoway-placeholder-left"></div>
-  <div class="col-sm-6 slideanim">
+  <div class="col-sm-6 slideanim" data-i18n="container-fluid.why_there_is_page_content">
     <p>Emm, good question. I used to own a personal blog. It's abandoned afterwards as blog requires content to be filled in, while a HTML5 page and links to social media are able to achieve the same purpose. However, he is a guy in general who remembers and works on something called... </p>
     <a href="#why" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search slideanim"></span> Rediscover the world.
@@ -154,8 +154,8 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center" id="where">
-  <h3 class="slideanim">Where To Find Me?</h3>
-  <h5 class="slideanim">Click usernames to move forward.</h5><br>
+  <h3 class="slideanim" data-i18n="container-fluid.where_to_find_me">Where To Find Me?</h3>
+  <h5 class="slideanim" data-i18n="container-fluid.where_to_find_me_content">Click usernames to move forward.</h5><br>
   <br>
   <div class="row">
     <div class="col-sm-4 slideanim">
@@ -170,7 +170,7 @@
     </div>
     <div class="col-sm-4 slideanim">
       <i class="fa fa-linkedin-square social-logo-medium" aria-hidden="true"></i>
-      <h4>Linkedin</h4>
+      <h4 data-i18n="container-fluid.where_linkedin">Linkedin</h4>
       <p><a href="https://go.popoway.cloud/sconli">Ming-Lei</a></p>
     </div>
     </div>
@@ -204,12 +204,12 @@
     <!-- Trigger the WeChat QR code popup with a "button" -->
     <div class="col-sm-4 slideanim" data-toggle="modal" data-target="#WeChatQRPopup">
       <i class="fa fa-weixin social-logo-medium" aria-hidden="true"></i>
-      <h4>WeChat</h4>
+      <h4 data-i18n="container-fluid.where_wechat">WeChat</h4>
       <p><a href="#WeChatQRPopup">@popoway</a></p>
     </div>
     <div class="col-sm-4 slideanim">
       <i class="fa fa-weibo social-logo-medium" aria-hidden="true"></i>
-      <h4>Weibo</h4>
+      <h4 data-i18n="container-fluid.where_weibo">Weibo</h4>
       <p><a href="https://go.popoway.cloud/sconwb">@popoway</a></p>
     </div>
   </div>
@@ -218,9 +218,9 @@
 <!-- Footer -->
 <footer class="container-fluid bg-4">
   <div class="row">
-    <div class="col-sm-4 col-sm-push-4 text-center"><a class="up-arrow" href="#myPage" data-toggle="tooltip" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span>
+    <div class="col-sm-4 col-sm-push-4 text-center"><a class="ctrl button up-arrow" href="#myPage" data-i18n="[title]common:ctrl.to_top" data-toggle="tooltip" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span>
   </a></div>
-    <div class="col-sm-4 col-sm-pull-4 hidden-xs text-left">Powered by popowayCloud.</div>
+    <div class="col-sm-4 col-sm-pull-4 hidden-xs text-left" data-i18n="container-fluid.footer_powered">Powered by popowayCloud.</div>
     <!-- Responsive margin of right footer -->
     <!-- 1.Adapt to larger screen -->
     <div class="col-sm-4 hidden-xs text-right">
@@ -240,18 +240,18 @@
     <!-- Main popup content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">WeChat QR Code</h4>
+        <button type="button" class="ctrl close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" data-i18n="WeChatQRPopup.title">WeChat QR Code</h4>
       </div>
       <div class="modal-body">
-        <p>Scan the following QR Code using your WeChat app to follow me: </p>
+        <p data-i18n="WeChatQRPopup.content">Scan the following QR Code using your WeChat app to follow me: </p>
         <div class="text-center">
           <img src="https://static.popoway.me/popoway.me/assets/wechat_300px.png" srcset="https://static.popoway.me/popoway.me/assets/wechat_300px.png 1x, https://static.popoway.me/popoway.me/assets/wechat_500px.png 1.67x, https://static.popoway.me/popoway.me/assets/wechat_1000px.png 3.33x" class="img-responsive" style="display:inline" data-toggle="tooltip" aria-label="QR code for popoway's WeChat account" title="QR code for popoway's WeChat account" alt="QR code for popoway's WeChat account" width="300" height="300">
           <p>@popoway</br>https://go.popoway.cloud/sconwx</p>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="ctrl btn btn-default" data-dismiss="modal" data-i18n="common:ctrl.close">Close</button>
       </div>
     </div>
 
@@ -260,14 +260,14 @@
 <!-- WeChat QR popup ends-->
 
 <!-- Load JavaScript: Defer loading js by putting src to footer -->
-<script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" defer integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" defer integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js" integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" defer crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
-<script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js" defer integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" defer integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js" integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
+<script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js" integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
+<script id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-i18n="[data-message]common:cookiebanner.message;[data-linkmsg]common:cookiebanner.more" data-message="popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy." data-linkmsg="Learn more..." src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js" defer integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
 <!--<script src="https://static.popoway.me/popoway.me/assets/smooth-scroll.min.js" defer integrity="sha256-0M2LUPZzJL1LyBYI7eyum8jIxMYNwNVkqP1SXaC8I9o=" crossorigin="anonymous"></script><!-- Call Scroll js -->-->
-<script src="assets/smooth-scroll.js" defer></script><!-- Call Scroll js -->
-<script id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-message="popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy." src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js"  defer integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
+<script src="assets/smooth-scroll.js"></script><!-- Call Scroll js -->
 <!-- pC Analytics Image Tracker -->
 <noscript><p><img src="https://a.popoway.cloud/pc-analy.main.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End pC Analytics Image Tracker -->

@@ -1,5 +1,17 @@
 {
-  "h3": {
-    "who_am_i": "Who Am I?"
+  "container-fluid": {
+    "who_am_i": "Who Am I?",
+    "why_there_is_page": "Why There's Such A Page?",
+    "why_there_is_page_content": "Emm, good question. I used to own a personal blog. It's abandoned afterwards as blog requires content to be filled in, while a HTML5 page and links to social media are able to achieve the same purpose. However, he is a guy in general who remembers and works on something called... ",
+    "where_to_find_me": "Where To Find Me?",
+    "where_to_find_me_content": "Click usernames to move forward.",
+    "where_linkedin": "Linkedin",
+    "where_wechat": "WeChat",
+    "where_weibo": "Weibo",
+    "footer_powered": "Powered by popowayCloud."
+  },
+  "WeChatQRPopup": {
+    "title": "WeChat QR Code",
+    "content": "Scan the following QR Code using your WeChat app to follow me: "
   }
 }
