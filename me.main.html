@@ -34,12 +34,12 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Sun Oct 29 3:39:07 UTC 2017 -->
+  <!-- Date: Sun Oct 29 5:15:40 UTC 2017 -->
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.1.1.231">
-  <meta name="popowaycloud-git-timestamp" content="1509248347">
+  <meta name="popowaycloud-git-revision" content="1.2.0.232">
+  <meta name="popowaycloud-git-timestamp" content="1509254140">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css" integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
@@ -118,11 +118,23 @@
       <a class="navbar-brand" href="#">popoway.me</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" data-i18n="common:nav.lang_selector" href="#">en<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)" onclick="i18next.changeLanguage('en');">en - English</a></li>
+            <li><a href="javascript:void(0)" onclick="i18next.changeLanguage('zh-Hans');">zh-Hans - Chinese (Simplified)</a></li>
+          </ul>
+        </li>
+      </ul>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#who" data-i18n="common:nav.who">WHO</a></li>
         <li><a href="#why" data-i18n="common:nav.why">WHY</a></li>
         <li><a href="#where" data-i18n="common:nav.where">WHERE</a></li>
       </ul>
+      
     </div>
   </div>
 </nav>
@@ -263,8 +275,9 @@
 <script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js" defer integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
 <script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" defer integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
 <script id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-i18n="[data-message]common:cookiebanner.message;[data-linkmsg]common:cookiebanner.more" data-message="popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy." data-linkmsg="Learn more..." src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js" defer integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
-<script src="assets/smooth-scroll.min.js" defer integrity="sha384-s4xV/y6pHuIFTVPy64PUzPKRDj0hV1evUiDT3xGfNyhijhnBdGJRSAlh8jgho9uC" crossorigin="anonymous"></script><!-- Call Scroll js -->
-<!--<script src="assets/smooth-scroll.js"></script>-->
+<!-- Call Scroll js -->
+<!--<script src="assets/smooth-scroll.min.js" defer integrity="sha384-s4xV/y6pHuIFTVPy64PUzPKRDj0hV1evUiDT3xGfNyhijhnBdGJRSAlh8jgho9uC" crossorigin="anonymous"></script>-->
+<script src="assets/smooth-scroll.js"></script>
 <!-- pC Analytics Image Tracker -->
 <noscript><p><img src="https://a.popoway.cloud/pc-analy.main.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End pC Analytics Image Tracker -->

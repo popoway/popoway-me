@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "who": "WHO",
+    "why": "WHY",
+    "where": "WHERE"
+  },
+  "ctrl": {
+    "to_top": "回到顶部",
+    "close": "关闭"
+  },
+  "cookiebanner": {
+    "message": "popoway.me 使用 cookies 以提升你的浏览体验。 继续浏览即表示同意部署 cookies，如我们的隐私政策中所述。",
+    "more": "了解更多"
+  }
+}

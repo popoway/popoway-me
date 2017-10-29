@@ -1,0 +1,17 @@
+{
+  "container-fluid": {
+    "footer_powered": "Powered by popowayCloud.",
+    "why_there_is_page_content": "嗯……好问题。我曾经拥有一个个人播客。它随后被抛弃了，因为博客需要写文章来充实，而一个 HTML5 页面以及前往社交媒体的链接能完成同样的任务。然而，总而言之他铭记及奋斗于……",
+    "where_to_find_me": "在哪儿找到我？",
+    "where_weibo": "微博",
+    "where_to_find_me_content": "点击用户名以打开。",
+    "where_linkedin": "领英",
+    "where_wechat": "微信",
+    "why_there_is_page": "为什么有这样的一个页面？",
+    "who_am_i": "我是谁"
+  },
+  "WeChatQRPopup": {
+    "title": "微信二维码",
+    "content": "使用你的微信应用扫描下列二维码以关注我："
+  }
+}
