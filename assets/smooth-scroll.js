@@ -50,7 +50,6 @@ $(document).ready(function(){
   i18next
     .use(i18nextXHRBackend)
     .init({
-      lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
       fallbackLng: 'en',
       debug: true,
       backend: {

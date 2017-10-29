@@ -3,13 +3,13 @@
     "message": "popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy.",
     "more": "Learn more"
   },
+  "nav": {
+    "why": "WHY",
+    "who": "WHO",
+    "where": "WHERE"
+  },
   "ctrl": {
     "to_top": "To Top",
     "close": "Close"
-  },
-  "nav": {
-    "who": "WHO",
-    "why": "WHY",
-    "where": "WHERE"
   }
 }
