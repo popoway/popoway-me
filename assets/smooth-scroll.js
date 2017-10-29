@@ -44,11 +44,12 @@ $(document).ready(function(){
 });
 
 // Initialize i18next module
-$(document).ready(function(){
+function readyi18n( jQuery ) {
+  // Code to run when the document is ready.
   //import i18next from 'i18next';
-  //import Backend from 'i18next-xhr-backend';
-  //import LngDetector from 'i18next-browser-languagedetector';
   i18next
+    //import Backend from 'i18next-xhr-backend';
+    //import LngDetector from 'i18next-browser-languagedetector';
     .use(i18nextXHRBackend)
     .use(i18nextBrowserLanguageDetector)
     .init({
@@ -77,20 +78,19 @@ $(document).ready(function(){
       // start localizing, details:
       // https://github.com/i18next/jquery-i18next#usage-of-selector-function
       updateContent();
+      function updateContent() {
+        $('#cookiebanner').localize();
+        $('.ctrl').localize();
+        $('.nav').localize();
+        $('.container-fluid').localize();
+        $('#WeChatQRPopup').localize();
+      }
+      $('.lang-select').click(function() {
+        i18next.changeLanguage(this.id, function() {
+           updateContent();
+        });
+      })
     });
-});
-
-function updateContent() {
-  $('#cookiebanner').localize();
-  $('.ctrl').localize();
-  $('.nav').localize();
-  $('.container-fluid').localize();
-  $('#WeChatQRPopup').localize();
 }
-function changeLng(lng) {
-  i18next.changeLanguage(lng);
-}
+$(document).ready( readyi18n );
 
-i18next.on('languageChanged', () => {
-	updateContent();
-});
