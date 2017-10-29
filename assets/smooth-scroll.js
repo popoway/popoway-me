@@ -50,7 +50,7 @@ $(document).ready(function(){
   //import LngDetector from 'i18next-browser-languagedetector';
   i18next
     .use(i18nextXHRBackend)
-    .use(LngDetector)
+    .use(i18nextBrowserLanguageDetector)
     .init({
       fallbackLng: 'en',
       debug: true,
