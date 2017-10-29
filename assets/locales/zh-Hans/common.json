@@ -1,6 +1,7 @@
 {
   "nav": {
     "who": "WHO",
+    "langselector": "zh-Hans",
     "why": "WHY",
     "where": "WHERE"
   },
