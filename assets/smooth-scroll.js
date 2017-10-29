@@ -74,10 +74,21 @@ $(document).ready(function(){
         });
       // start localizing, details:
       // https://github.com/i18next/jquery-i18next#usage-of-selector-function
-      $('#cookiebanner').localize();
-      $('.ctrl').localize();
-      $('.nav').localize();
-      $('.container-fluid').localize();
-      $('#WeChatQRPopup').localize();
+      updateContent();
     });
-})
+});
+
+function updateContent() {
+  $('#cookiebanner').localize();
+  $('.ctrl').localize();
+  $('.nav').localize();
+  $('.container-fluid').localize();
+  $('#WeChatQRPopup').localize();
+}
+function changeLng(lng) {
+  i18next.changeLanguage(lng);
+}
+
+i18next.on('languageChanged', () => {
+	updateContent();
+});
