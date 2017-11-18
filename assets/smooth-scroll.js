@@ -4,6 +4,8 @@
  * (https://github.com/popoway/popoway-me/blob/master/LICENSE)
  */
 $(document).ready(function(){
+  // Force page scroll position to top at page refresh in HTML
+  $(this).scrollTop(0);
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
