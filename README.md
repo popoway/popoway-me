@@ -1,4 +1,5 @@
 # popoway-me
+[![GitHub tag](https://img.shields.io/github/tag/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/tags)
 [![GitHub Release Date](https://img.shields.io/github/release-date/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/releases)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/releases)
 [![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/w/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/commits)
