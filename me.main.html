@@ -32,12 +32,12 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2017 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Sat Nov 18 22:44:27 UTC 2017 -->
+  <!-- Date: Sun Nov 19 5:17:27 UTC 2017 -->
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.2.3.244">
-  <meta name="popowaycloud-git-timestamp" content="1511045067">
+  <meta name="popowaycloud-git-revision" content="1.2.3.245">
+  <meta name="popowaycloud-git-timestamp" content="1511068647">
 
   <!-- Load styles -->
   <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css" integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
@@ -76,19 +76,33 @@
     </style>
   </noscript>
   
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109604040-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-109604040-1');
+  </script>
+
   <!-- pC Analytics JavaScript Tracker -->
   <script type="text/javascript">
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-       var u="https://a.popoway.cloud/";
-       _paq.push(['setTrackerUrl', u+'pc-analy.main.php']);
-       _paq.push(['setSiteId', '2']);
-       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pc-analy.main.js'; s.parentNode.insertBefore(g,s);
-       })();
+  //<![CDATA[
+  var owa_baseUrl = 'https://a.popoway.cloud/';
+  var owa_cmds = owa_cmds || [];
+  owa_cmds.push(['setSiteId', '02d16861a20e9d39e29d6264c2504c5b']);
+  owa_cmds.push(['trackPageView']);
+  owa_cmds.push(['trackClicks']);
+  owa_cmds.push(['trackDomStream']);
+
+  (function() {
+    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+  }());
+  //]]>
   </script>
   <!-- End pC Analytics JavaScript Tracker Code -->
 </head>
@@ -292,7 +306,7 @@
       Brewed with <i class="fa fa-heart" data-toggle="tooltip" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>.
     </div>
   </div>
-  <p style="color:#555;font-size:12px;" class="ver-binding"><a href="https://github.com/popoway/popoway-me/releases">1.2.3.244</a></p>
+  <p style="color:#555;font-size:12px;" class="ver-binding"><a href="https://github.com/popoway/popoway-me/releases">1.2.3.245</a></p>
 </footer>
 
 <!-- WeChat QR popup starts-->
