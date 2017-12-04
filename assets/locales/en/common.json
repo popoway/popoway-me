@@ -1,14 +1,15 @@
 {
-    "nav": {
-        "newsroom": "Newsroom",
-        "why": "WHY",
-        "who": "WHO",
-        "lang_selector": "en",
-        "where": "WHERE"
-    },
     "cookiebanner": {
         "message": "popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy.",
         "more": "Learn more"
+    },
+    "nav": {
+        "newsroom_link": "https:\/\/popoway.me\/newsroom",
+        "newsroom": "Newsroom",
+        "why": "WHY",
+        "who": "WHO",
+        "where": "WHERE",
+        "lang_selector": "en"
     },
     "ctrl": {
         "to_top": "To Top",
