@@ -68,7 +68,7 @@
   }
 
 /* Slide animation start */
-  /* .slideanim {visibility:hidden;} */
+  .slideanim {visibility:hidden;}
   .slide {
     /* The name of the animation */
     animation-name: slide;
