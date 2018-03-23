@@ -1,0 +1,18 @@
+{
+    "cookiebanner": {
+        "message": "popoway.me \u642d\u8f09 Cookies \u4ee5\u5f3a\u5316\u4f60\u7684\u885d\u6d6a\u9ad4\u9a57\u3002 \u7e7c\u7e8c\u700f\u89bd\u5373\u9ed8\u8a31\u90e8\u7f72 Cookies\uff0c\u5982\u6211\u5011\u7684\u79c1\u96b1\u653f\u7b56\u4e2d\u6240\u8ff0\u3002",
+        "more": "\u77ad\u89e3\u8a73\u60c5"
+    },
+    "nav": {
+        "newsroom_link": "https:\/\/popoway.me\/newsroom\/zh-TW",
+        "newsroom": "\u65b0\u805e\u5ba4",
+        "why": "WHY",
+        "who": "WHO",
+        "where": "WHERE",
+        "lang_selector": "zh-TW"
+    },
+    "ctrl": {
+        "to_top": "\u56de\u5230\u9802\u90e8",
+        "close": "\u95dc\u9589"
+    }
+}
