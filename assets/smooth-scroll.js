@@ -21,7 +21,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -41,6 +41,12 @@ $(window).scroll(function() {
 });
 
 // Initialize Bootstrap tooltip
+$(document).ready(function(){
+  $(".img-circle").attr( "src", "assets/avatar_350px.png" );
+  $(".img-circle").attr( "srcset", "assets/avatar_350px.png 1x, assets/avatar_700px.png 2x, assets/avatar_1050px.png 3x" );
+});
+
+// ajax load avatar
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
@@ -95,4 +101,3 @@ function readyi18n( jQuery ) {
     });
 }
 $(document).ready( readyi18n );
-
