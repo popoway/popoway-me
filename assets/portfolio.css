@@ -104,6 +104,7 @@
 
 /* Circle avatar image animation start */
   .img-circle {
+    display:inline;
     -webkit-animation: fadein 0.8s; /* Safari and Chrome */
     -moz-animation: fadein 0.8s; /* Firefox */
     -ms-animation: fadein 0.8s; /* Internet Explorer */
