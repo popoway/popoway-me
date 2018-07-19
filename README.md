@@ -11,9 +11,8 @@ A fast, responsive, colorful webpage, which actually is popoway's personal intro
 
 # Quick Links
 Try it:
-* release: [popoway.me](https://popoway.me), or
-* pre-release(gh-pages): [beta.popoway.me](https://beta.popoway.me/me.main.html), and
-* snapshot(master): [herokuapp](https://popoway-me.herokuapp.com/me.main.html)  
+* release: [popoway.me](https://popoway.me)
+* pre-release: [beta.popoway.me](https://beta.popoway.me/me.main.html)
 
 Release Notes: [Release Notes](https://github.com/popoway/popoway-me/releases)  
 TODO: [TODO](https://gist.github.com/popoway/2b03716f16f2b442715455ab8efb310f)
