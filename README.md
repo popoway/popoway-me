@@ -4,10 +4,8 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/releases)
 [![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/w/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/commits)
 [![GitHub language count](https://img.shields.io/github/languages/count/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/search?l=JSON&type=Code)
-[![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/blob/master/LICENSE)
-
+[![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/blob/master/LICENSE)  
 A fast, responsive, colorful webpage, which actually is popoway's personal introduction.  
-
 ![Screenshot of popoway.me](assets/desktop_preview.png)
 
 # Quick Links
@@ -16,10 +14,10 @@ Try it:
 * pre-release: [beta.popoway.me](https://beta.popoway.me/me.main.html)
 
 Release Notes: [Release Notes](https://github.com/popoway/popoway-me/releases)  
-TODO: [TODO](https://gist.github.com/popoway/2b03716f16f2b442715455ab8efb310f)
+TODO: [TODO](https://github.com/popoway/popoway-me/wiki/TODO)
 
 # Status
-Basic features should work, since it is rather stable.
+Basic features should work, since it is rather stable.  
 Project roadmap with planned features and approximate schedule is on [TODO](https://github.com/popoway/popoway-me/wiki/TODO) page.
 
 # Contributing
