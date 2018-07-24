@@ -1,0 +1,18 @@
+{
+    "container-fluid": {
+        "who_am_i": "\u00bfQui\u00e9n soy?",
+        "who_am_i_answer": "Soy popoway.",
+        "why_there_is_page": "\u00bfPor qu\u00e9 hay tal p\u00e1gina?",
+        "where_to_find_me": "\u00bfD\u00f3nde encontrarme?",
+        "where_to_find_me_content": "Haga clic en los nombres de usuario para avanzar.",
+        "where_weibo": "Weibo",
+        "where_wechat": "WeChat",
+        "where_linkedin": "Linkedin",
+        "where_tweibo": "Tencent Weibo",
+        "footer_powered": "Powered by popowayCloud."
+    },
+    "WeChatQRPopup": {
+        "title": "WeChat QR Code",
+        "content": "Escanee el siguiente QR Code con su WeChat app para seguirme: "
+    }
+}

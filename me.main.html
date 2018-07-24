@@ -32,18 +32,22 @@
   <!-- https://popoway.me/ -->
   <!-- Copyright 2018 popoway. Licensed under the MIT license. -->
   <!-- https://github.com/popoway/popoway-me/blob/master/LICENSE -->
-  <!-- Date: Thu Feb 1 3:55:53 UTC 2018 -->
+  <!-- Date: Tue Jul 24 6:59:55 UTC 2018 -->
   <title>popoway.me</title>
 
   <!-- pC Git version controller -->
-  <meta name="popowaycloud-git-revision" content="1.2.5.252">
-  <meta name="popowaycloud-git-timestamp" content="1517457353">
+  <meta name="popowaycloud-git-revision" content="1.3.0.263">
+  <meta name="popowaycloud-git-timestamp" content="1532415595">
 
   <!-- Load styles -->
-  <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css" integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://static.popoway.me/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/portfolio.min.css" integrity="sha384-kP8kZjWTvGcn4MxLRE6bCFwceS4romV0O66VVGfYhyheRTeEBqZk3+Xh2DcJtmqg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://static.popoway.me/fonts/opensans/opensans.min.css"
+        integrity="sha384-Xrzat8P9cvhcQdeHz/Me6Jo1yX5DrkEnpw+m89nptaWQBNMqSzi4XDZXlIT0vxSA" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://static.popoway.me/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/portfolio.min.css"
+        integrity="sha384-Sk5Ue/50VYrHFAFHk1czRyoRc9h/fqxuGwB8Jptb7gOet+Iauf92yNqkEz4YH79Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="assets/portfolio.css"> -->
 
   <!-- Load fav and touch icons -->
@@ -67,6 +71,8 @@
   <!-- NoJs notice preload-->
   <noscript>
     <style>
+      .avatar-ajax {display: none;}
+      .bg-1 {padding-top: 180px;}
       .slideanim {visibility:visible;}
       figure noscript {
         top: 0;
@@ -132,7 +138,7 @@
         }
     </style>
     <p class="noscript-banner enable-js">popoway.me requires to enable JavaScript for complete experience. <a href="https://go.popoway.cloud/hteajs/" target="_blank" rel="noopener">Here is how.</a></p>
-    <p class="noscript-banner cookie-banner-nojs">popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our <a href="https://go.popoway.cloud/cookie/" tabindex="0" target="_blank"  rel="noopener">privacy policy.</a></p>
+    <p class="noscript-banner cookie-banner-nojs">popoway.me uses Cookies to improve your browsing experience. By continuing we assume your permission to deploy Cookies, as detailed in our <a href="https://go.popoway.cloud/cookie/" tabindex="0" target="_blank"  rel="noopener">Privacy Policy.</a></p>
   </noscript>
 
   <div class="container">
@@ -153,7 +159,10 @@
           </a>
           <ul class="dropdown-menu" style="letter-spacing: 1px;">
             <li class="lang-select" id="en"><a href="javascript:void(0)">en - English</a></li>
+            <li class="lang-select" id="es"><a href="javascript:void(0)">es - Español</a></li>
+            <li class="lang-select" id="ja"><a href="javascript:void(0)">ja - 日本語</a></li>
             <li class="lang-select" id="zh-CN"><a href="javascript:void(0)">zh-CN - 简体中文</a></li>
+            <li class="lang-select" id="zh-TW"><a href="javascript:void(0)">zh-TW - 繁體中文</a></li>
           </ul>
         </li>
         <li><a href="newsroom" data-i18n="common:nav.newsroom;[href]common:nav.newsroom_link">Newsroom</a></li>
@@ -172,7 +181,8 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who">
   <h3 class="margin" data-i18n="portfolio:container-fluid.who_am_i">Who Am I?</h3>
-  <img src="assets/avatar_350px.png" srcset="assets/avatar_350px.png 1x, assets/avatar_700px.png 2x, assets/avatar_1050px.png 3x" class="img-responsive img-circle margin" style="display:inline" data-toggle="tooltip" data-placement="bottom" aria-label="popoway's avatar, handmade Detective Conan figure, white background" title="popoway's avatar" alt="popoway's avatar, handmade Detective Conan figure, white background" width="350" height="350">
+  <noscript><img class="img-responsive img-circle margin" src="assets/avatar_350px.png" srcset="assets/avatar_350px.png 1x, assets/avatar_700px.png 2x, assets/avatar_1050px.png 3x" data-toggle="tooltip" data-placement="bottom" aria-label="popoway's avatar, handmade Detective Conan figure, white background" title="popoway's avatar" alt="popoway's avatar, handmade Detective Conan figure, white background" width="350" height="350"></noscript>
+  <img class="img-responsive img-circle margin avatar-ajax" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiIGhlaWdodD0iMTAwcHgiIHdpZHRoPSIxMDBweCI+DQo8Zz4NCiA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+DQogPHJlY3QgZmlsbD0iI2ZmZiIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMCIgd2lkdGg9IjQwMCIgeT0iLTEiIHg9Ii0xIi8+DQogPGcgZGlzcGxheT0ibm9uZSIgb3ZlcmZsb3c9InZpc2libGUiIHk9IjAiIHg9IjAiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiIGlkPSJjYW52YXNHcmlkIj4NCiAgPHJlY3QgZmlsbD0idXJsKCNncmlkcGF0dGVybikiIHN0cm9rZS13aWR0aD0iMCIgeT0iMCIgeD0iMCIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSIvPg0KIDwvZz4NCjwvZz48L3N2Zz4=" data-toggle="tooltip" data-placement="bottom" aria-label="popoway's avatar, handmade Detective Conan figure, white background" title="popoway's avatar" alt="popoway's avatar, handmade Detective Conan figure, white background" width="350" height="350">
   <h3 class="slideanim" data-i18n="portfolio:container-fluid.who_am_i_answer">I'm popoway.</h3>
   <h5 class="slideanim" data-toggle="tooltip" title="International Phonetic Alphabet" aria-hidden="true">IPA: |ˈpɑpəˌweɪ|</h5>
 </div>
@@ -263,11 +273,36 @@
         <p>Ming Lei</p>
       </div>
     </a>
+    <a href="https://go.popoway.cloud/sconaz">
+      <div class="col-sm-4 slideanim">
+        <i class="fa fa-amazon social-logo-medium" aria-hidden="true"></i>
+        <h4 class="bg-3-servicename">Amazon</h4>
+        <p>@popoway</p>
+      </div>
+    </a>
+  </div>
+  </br>
+
+  <div class="row">
     <a href="https://go.popoway.cloud/sconrd">
       <div class="col-sm-4 slideanim">
         <i class="fa fa-reddit social-logo-medium" aria-hidden="true"></i>
         <h4 class="bg-3-servicename">Reddit</h4>
         <p>popoway</p>
+      </div>
+    </a>
+    <a href="https://go.popoway.cloud/sconsc">
+      <div class="col-sm-4 slideanim">
+        <i class="fa fa-snapchat social-logo-medium" aria-hidden="true"></i>
+        <h4 class="bg-3-servicename">Snapchat</h4>
+        <p>@popoway9</p>
+      </div>
+    </a>
+    <a href="https://go.popoway.cloud/scontg">
+      <div class="col-sm-4 slideanim">
+        <i class="fa fa-telegram social-logo-medium" aria-hidden="true"></i>
+        <h4 class="bg-3-servicename">Telegram</h4>
+        <p>@popoway</p>
       </div>
     </a>
   </div>
@@ -339,7 +374,7 @@
       Brewed with <i class="fa fa-heart" data-toggle="tooltip" aria-label="love" title="love" alt="love"></i><span class="visuallyhidden">love</span> by <a href="#myPage">popoway</a>.
     </div>
   </div>
-  <p style="color:#555;font-size:12px;" class="ver-binding"><a href="https://github.com/popoway/popoway-me/releases">1.2.5</a></p>
+  <p style="color:#555;font-size:12px;" class="ver-binding"><a href="https://github.com/popoway/popoway-me/releases">1.3.0</a></p>
 </footer>
 
 <!-- WeChat QR popup starts-->
@@ -355,12 +390,23 @@
       <div class="modal-body">
         <p data-i18n="WeChatQRPopup.content">Scan the following QR Code using your WeChat app to follow me: </p>
         <div class="text-center">
-          <img src="assets/wechat_300px.png" srcset="assets/wechat_300px.png 1x, assets/wechat_500px.png 1.67x, assets/wechat_1000px.png 3.33x" class="img-responsive" style="display:inline" data-toggle="tooltip" aria-label="QR code for popoway's WeChat account" title="QR code for popoway's WeChat account" alt="QR code for popoway's WeChat account" width="300" height="300">
+          <img
+          class="img-responsive wechat-qr"
+          style="display:inline"
+          data-toggle="tooltip"
+          aria-label="QR code for popoway's WeChat account"
+          title="QR code for popoway's WeChat account"
+          alt="QR code for popoway's WeChat account"
+          width="300" height="300">
           <p>@popoway</br>https://go.popoway.cloud/sconwx</p>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="ctrl btn btn-default" data-dismiss="modal" data-i18n="common:ctrl.close">Close</button>
+        <button
+        type="button"
+        class="ctrl btn btn-default"
+        data-dismiss="modal"
+        data-i18n="common:ctrl.close">Close</button>
       </div>
     </div>
 
@@ -369,15 +415,23 @@
 <!-- WeChat QR popup ends-->
 
 <!-- Load JavaScript: Defer loading js by putting src to footer -->
-<script src="https://static.popoway.me/ajax/libs/jquery/3.2.1/jquery.min.js" defer integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js" defer integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js" defer integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
-<script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js" defer integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" defer integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
-<script src="https://static.popoway.me/ajax/libs/i18next-browser-languageDetector/2.0.0/i18nextBrowserLanguageDetector.min.js" defer integrity="sha384-32yL9AegbpPZ+PGuwc9WkVA4/tzNIiozbqj3GgFvPObgGPdwPPR84lNzhF8QqZWZ" crossorigin="anonymous"></script>
-<script id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-i18n="[data-message]common:cookiebanner.message;[data-linkmsg]common:cookiebanner.more" data-message="popoway.me uses cookies to improve your browsing experience. By continuing we assume your permission to deploy cookies, as detailed in our privacy policy." data-linkmsg="Learn more..." src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js" defer integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/jquery/3.3.1/jquery.min.js"
+        defer integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/bootstrap/3.3.7/js/bootstrap.min.js"
+        defer integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/i18next/10.0.3/i18next.min.js"
+        defer integrity="sha384-4cOqw3pHnfpZvPcgJSM6NHCR/ckN6vdiTltVHZUfyEJXgeBrjZJF7aGrpG69UNry" crossorigin="anonymous"></script><!-- i18next Internationalization Framework -->
+<script src="https://static.popoway.me/ajax/libs/i18next-xhr-backend/1.4.3/i18nextXHRBackend.min.js"
+        defer integrity="sha256-XNjsJ3u3TvGT98+9dCFJJAtwEnCd1DjL6LhWPLz1hUU=" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"
+        defer integrity="sha384-fLTSt6zHOb152KeFkj7kSiXdkyjKf6fjk5bdzWYLDPDo9evwd9PVs3TKoYYaaxdl" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/i18next-browser-languageDetector/2.0.0/i18nextBrowserLanguageDetector.min.js"
+        defer integrity="sha384-32yL9AegbpPZ+PGuwc9WkVA4/tzNIiozbqj3GgFvPObgGPdwPPR84lNzhF8QqZWZ" crossorigin="anonymous"></script>
+<script src="https://static.popoway.me/ajax/libs/cookie-banner/1.2.0/cookiebanner.min.js"
+        defer id="cookiebanner" data-moreinfo="https://go.popoway.cloud/cookie/" data-i18n="[data-message]common:cookiebanner.message;[data-linkmsg]common:cookiebanner.more" data-message="popoway.me uses Cookies to improve your browsing experience. By continuing we assume your permission to deploy Cookies, as detailed in our Privacy Policy." data-linkmsg="Learn more" integrity="sha384-xb47z0jQyvIYzxc4QZsYPpmzN0W4au5hsQwbVbxc2/ZuenTp2hS/e77JNNY9QM0d" crossorigin="anonymous"></script>
 <!-- Call Scroll js -->
-<script src="assets/smooth-scroll.min.js" defer integrity="sha384-2MPTD7s3yb6W0OXUvK2IGmpBKrnNxjlkeA88SnZrQnZZxb0fdThrP/YFr9WDNTnK" crossorigin="anonymous"></script>
+<script src="assets/smooth-scroll.min.js"
+        defer integrity="sha384-DffvanPxFHs1VKsl28s8C08fD+yVcNqWScDcrrH9LGShfvOwuMt0G/Z+xFn6bYJX" crossorigin="anonymous"></script>
 <!-- <script src="assets/smooth-scroll.js" defer></script> -->
 
 </body>

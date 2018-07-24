@@ -1,6 +1,6 @@
 /*!
  * smooth-scroll.js - smooth scrolling script of popoway.me (https://popoway.me/)
- * Copyright 2017 popoway. Licensed under the MIT license.
+ * Copyright 2018 popoway. Licensed under the MIT license.
  * (https://github.com/popoway/popoway-me/blob/master/LICENSE)
  */
 $(document).ready(function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -38,6 +38,14 @@ $(window).scroll(function() {
       $(this).addClass("slide");
     }
   });
+});
+
+// ajax load avatar
+$(document).ready(function(){
+  $(".img-circle").attr( "src", "assets/avatar_350px.png" );
+  $(".img-circle").attr( "srcset", "assets/avatar_350px.png 1x, assets/avatar_700px.png 2x, assets/avatar_1050px.png 3x" );
+  $(".wechat-qr").attr( "src", "assets/wechat_300px.png" );
+  $(".wechat-qr").attr( "srcset", "assets/wechat_300px.png 1x, assets/wechat_500px.png 1.67x, assets/wechat_1000px.png 3.33x" );
 });
 
 // Initialize Bootstrap tooltip
@@ -95,4 +103,3 @@ function readyi18n( jQuery ) {
     });
 }
 $(document).ready( readyi18n );
-
