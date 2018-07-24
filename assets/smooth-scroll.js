@@ -1,6 +1,6 @@
 /*!
  * smooth-scroll.js - smooth scrolling script of popoway.me (https://popoway.me/)
- * Copyright 2017 popoway. Licensed under the MIT license.
+ * Copyright 2018 popoway. Licensed under the MIT license.
  * (https://github.com/popoway/popoway-me/blob/master/LICENSE)
  */
 $(document).ready(function(){
