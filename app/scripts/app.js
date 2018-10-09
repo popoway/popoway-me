@@ -1,8 +1,3 @@
-/*!
- * smooth-scroll.js - smooth scrolling script of popoway.me (https://popoway.me/)
- * Copyright 2018 popoway. Licensed under the MIT license.
- * (https://github.com/popoway/popoway-me/blob/master/LICENSE)
- */
 $(document).ready(function(){
   // Force page scroll position to top at page refresh in HTML
   $(this).scrollTop(0);
