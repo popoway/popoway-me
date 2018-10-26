@@ -4,7 +4,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      dist: "dist"
+      dist: "dist",
+      temp: "temp"
+    },
+    concat: {
+      options: {
+        separator: '\n', // new line
+      },
+      dist: {
+        src: ['app/templates/header.html', 'app/templates/body.html',
+              'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
+              'app/templates/script.html'],
+        dest: 'temp/index.html',
+      },
     },
     copy: {
       'dev-css': {
@@ -13,6 +25,14 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'app/styles', src: ['**'], dest: 'dist/styles'},
         ],
       },
+      assets: {
+        files: [
+          // includes files within path and its sub-directories
+          {expand: true, cwd: 'app/icons', src: ['**'], dest: 'dist/icons'},
+          {expand: true, cwd: 'app/images', src: ['**'], dest: 'dist/images'},
+          {expand: true, cwd: 'app/locales', src: ['**'], dest: 'dist/locales'},
+        ],
+      }
     },
     cssmin: {
       dist: {
@@ -43,7 +63,7 @@ module.exports = function(grunt) {
           removeComments: false
         },
         files: {
-          'dist/index.html': 'app/index.html'
+          'dist/index.html': 'temp/index.html'
         }
       },                                   // Task
       dist: {                                      // Target
@@ -55,7 +75,7 @@ module.exports = function(grunt) {
           removeComments: true
         },
         files: {                                   // Dictionary of files
-          'dist/index.html': 'app/index.html'      // 'destination': 'source'
+          'dist/index.html': 'temp/index.html'      // 'destination': 'source'
         }
       }
     },
@@ -110,6 +130,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-codesign');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
@@ -118,33 +139,42 @@ module.exports = function(grunt) {
 
   // compound builder tasks
   grunt.registerTask('devTask', [
-    'clean',
+    'clean:dist',
     'gitinfo',
     'uglify:dev',
     'copy:dev-css',
+    'concat:dist',
     'htmlmin:dev',
     'usebanner:HTML',
-    'usebanner:JS'
+    'usebanner:JS',
+    'copy:assets',
+    'clean:temp'
   ]);
 
   grunt.registerTask('betaTask', [
-    'clean',
+    'clean:dist',
     'gitinfo',
     'uglify:dist',
     'cssmin:dist',
+    'concat:dist',
     'htmlmin:dist',
     'usebanner:HTML',
-    'usebanner:JS'
+    'usebanner:JS',
+    'copy:assets',
+    'clean:temp'
   ]);
 
   grunt.registerTask('distTask', [
-    'clean',
+    'clean:dist',
     'gitinfo',
     'uglify:dist',
     'cssmin:dist',
+    'concat:dist',
     'htmlmin:dist',
     'usebanner:HTML',
-    'usebanner:JS'
+    'usebanner:JS',
+    'copy:assets',
+    'clean:temp'
   ]);
 
   // entry point tasks
