@@ -179,7 +179,8 @@ module.exports = function(grunt) {
   ]);
 
   // entry point tasks
-  grunt.registerTask('default', 'Default: build dev version', ['devTask']);
+  grunt.registerTask('default', 'Default: build dev version', ['dev']);
+  grunt.registerTask('test', 'test: build and test dev version', ['dev']);
   grunt.registerTask('dev', 'dev: build dev version', ['devTask']);
   grunt.registerTask('beta', 'beta: build beta(pre-prelease) version', ['betaTask']);
   grunt.registerTask('dist', 'dist: build offical release version', ['distTask']);
