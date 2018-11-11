@@ -37,10 +37,10 @@ $(window).scroll(function() {
 
 // ajax load avatar
 $(document).ready(function(){
-  $(".img-circle").attr( "src", "assets/avatar_350px.png" );
-  $(".img-circle").attr( "srcset", "assets/avatar_350px.png 1x, assets/avatar_700px.png 2x, assets/avatar_1050px.png 3x" );
-  $(".wechat-qr").attr( "src", "assets/wechat_300px.png" );
-  $(".wechat-qr").attr( "srcset", "assets/wechat_300px.png 1x, assets/wechat_500px.png 1.67x, assets/wechat_1000px.png 3.33x" );
+  $(".img-circle").attr( "src", "images/avatar_350px.png" );
+  $(".img-circle").attr( "srcset", "images/avatar_350px.png 1x, images/avatar_700px.png 2x, images/avatar_1050px.png 3x" );
+  $(".wechat-qr").attr( "src", "images/wechat_300px.png" );
+  $(".wechat-qr").attr( "srcset", "images/wechat_300px.png 1x, images/wechat_500px.png 1.67x, images/wechat_1000px.png 3.33x" );
 });
 
 // Initialize Bootstrap tooltip
@@ -62,7 +62,7 @@ function readyi18n( jQuery ) {
       debug: true,
       backend: {
         // for all available options read the backend's repository readme file
-        loadPath: 'assets/locales/{{lng}}/{{ns}}.json',
+        loadPath: 'locales/{{lng}}/{{ns}}.json',
         crossDomain: true
       },
       ns: ['common', 'portfolio'],
