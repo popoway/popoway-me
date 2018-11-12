@@ -4,8 +4,9 @@
 [![GitHub Release Date](https://img.shields.io/github/release-date/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/releases)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/releases)
 [![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/w/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/commits)
-[![GitHub language count](https://img.shields.io/github/languages/count/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/search?l=JSON&type=Code)
-[![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/blob/master/LICENSE)  
+[![GitHub language count](https://img.shields.io/github/languages/count/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/search?l=JavaScript&type=Code)
+[![Travis (.com)](https://img.shields.io/travis/com/popoway/popoway-me.svg)](https://travis-ci.com/popoway/popoway-me/builds/)
+[![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://popoway.mit-license.org/)  
 A fast, responsive, colorful webpage, which actually is popoway's personal introduction.  
 ![Screenshot of popoway.me](img/desktop-preview.png)
 
@@ -13,7 +14,7 @@ A fast, responsive, colorful webpage, which actually is popoway's personal intro
 
 Try it:
 * release: [popoway.me](https://popoway.me)
-* pre-release: [beta.popoway.me](https://beta.popoway.me/me.main.html)
+* pre-release: [beta.popoway.me](https://beta.popoway.me)
 
 Release Notes: [Release Notes](https://github.com/popoway/popoway-me/releases)  
 TODO: [TODO](https://github.com/popoway/popoway-me/wiki/TODO)
