@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         separator: '\n', // new line
       },
       dist: {
-        src: ['app/templates/header.html', 'app/templates/navbar.html',
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
               'app/templates/first.html', 'app/templates/second.html', 'app/templates/third.html',
               'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
               'app/templates/script.html'],
