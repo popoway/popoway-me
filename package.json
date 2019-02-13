@@ -1,6 +1,6 @@
 {
   "name": "popoway-me",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.3",
   "description": "stupid personal introduction",
   "main": "Gruntfile.js",
   "devDependencies": {
@@ -15,8 +15,11 @@
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4",
     "grunt-githash": "^0.1.3",
     "grunt-gitinfo": "^0.1.8",
+    "grunt-open": "^0.2.3",
     "grunt-sri": "^0.2.0"
   },
   "scripts": {

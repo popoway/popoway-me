@@ -8,5 +8,5 @@ express()
   .listen(PORT, onListen);
 
 function onListen() {
-  console.log('Listening on', PORT);
+  console.log('\x1b[36m%s\x1b[0m', 'The popoway-me debug server is now running on localhost:' + PORT, '\nHit Control + C to terminate.');
 }

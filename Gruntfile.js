@@ -42,10 +42,20 @@ module.exports = function(grunt) {
           cwd: 'app/styles',
           src: ['*.css', '!*.min.css'],
           dest: 'dist/styles',
-          ext: '.min.css'
+          ext: '.css'
         }]
       }
     },
+    express: {
+       options: {
+         // Override defaults here
+       },
+       dev: {
+         options: {
+           script: 'server.js'
+         }
+       }
+     },
     gitinfo: {
       branch: {
         current: {
@@ -92,7 +102,7 @@ module.exports = function(grunt) {
         options: {
           preserveComments: false
         },
-        files: { 'dist/scripts/app.min.js': ['app/scripts/app.js'] }
+        files: { 'dist/scripts/app.js': ['app/scripts/app.js'] }
       },
     },
     HTMLbanner: '<!-- ! \n' +
@@ -100,16 +110,31 @@ module.exports = function(grunt) {
                 '    * Copyright <%= grunt.template.today("yyyy") %> The <%= pkg.name %> Authors (https://github.com/popoway/popoway-me/graphs/contributors)\n' +
                 '    * Licensed under the <%= pkg.license %> License. (https://github.com/popoway/popoway-me/blob/master/LICENSE)\n ' +
                 ' -->',
+    livereloadbanner: '<script src="//localhost:35729/livereload.js"></script>',
     JSbanner: '/*!\n' +
               ' * This file is part of <%= pkg.name %> v<%= pkg.version %> (<%= gitinfo.local.branch.current.shortSHA %>) (<%= pkg.author.url %>)\n' +
               ' * Copyright <%= grunt.template.today("yyyy") %> The <%= pkg.name %> Authors (https://github.com/popoway/popoway-me/graphs/contributors)\n' +
               ' * Licensed under the <%= pkg.license %> License. (https://github.com/popoway/popoway-me/blob/master/LICENSE)\n ' +
               '*/',
+    open: {
+      dev: {
+        path: 'http://localhost:3000/'
+      }
+    },
     usebanner: {
       HTML: {
         options: {
           position: 'top',
           banner: '<%= HTMLbanner %>'
+        },
+        files: {
+          src: [ 'dist/index.html' ]
+        }
+      },
+      HTMLdev: {
+        options: {
+          position: 'top',
+          banner: '<%= HTMLbanner %><%= livereloadbanner %>'
         },
         files: {
           src: [ 'dist/index.html' ]
@@ -124,6 +149,16 @@ module.exports = function(grunt) {
           src: [ 'dist/scripts/*.js', 'dist/styles/*.css' ]
         }
       }
+    },
+    watch: {
+      options: {
+        // Start a live reload server on the default port 35729
+        livereload: true,
+      },
+      dev: {
+        files: ['app/**/*.*'],
+        tasks: ['dev']
+      }
     }
   });
 
@@ -137,7 +172,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-gitinfo');
+  grunt.loadNpmTasks('grunt-open');
 
   // compound builder tasks
   grunt.registerTask('devTask', [
@@ -147,7 +185,7 @@ module.exports = function(grunt) {
     'copy:dev-css',
     'concat:dist',
     'htmlmin:dev',
-    'usebanner:HTML',
+    'usebanner:HTMLdev',
     'usebanner:JS',
     'copy:assets',
     'clean:temp'
@@ -179,9 +217,15 @@ module.exports = function(grunt) {
     'clean:temp'
   ]);
 
+  grunt.registerTask('server', [
+    'express',
+    'open',
+    'watch'
+  ]);
+
   // entry point tasks
   grunt.registerTask('default', 'Default: build dev version', ['dev']);
-  grunt.registerTask('test', 'test: build and test dev version', ['dev']);
+  grunt.registerTask('test', 'test: build and test dev version', ['dev', 'server']);
   grunt.registerTask('dev', 'dev: build dev version', ['devTask']);
   grunt.registerTask('beta', 'beta: build beta(pre-prelease) version', ['betaTask']);
   grunt.registerTask('dist', 'dist: build offical release version', ['distTask']);
