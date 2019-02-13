@@ -32,6 +32,22 @@ Project roadmap with planned features and approximate schedule is on [TODO](http
 
 Full list is available [here](https://github.com/popoway/popoway-me/wiki/Supported-Platforms).
 
+## Self-hosting
+Everything you need to host this app on your server is any static file server. The app is a few HTML files + assets + cache manifest (optionally; for offline access). You can download the latest official distribution files from the [release page](https://github.com/popoway/popoway-me/releases).
+
+To generate a variant rather than the regular release, check out to the [following](#Building) chapter.
+
+## Building
+1. Clone the popoway-me repo:  
+`git clone git@github.com:popoway/popoway-me.git`
+2. Build the app with grunt: `grunt` (html file will be in `dist/`)
+
+For debug build:
+1. run `grunt dev`
+2. open `http://localhost:3000/`
+
+For a complete building and release procedure, [go to this Wiki page](https://github.com/popoway/popoway-me/wiki/Releasing).
+
 ## Contributing
 
 Give me [inspiration](mailto:popoway@popoway.cloud), or help [translate it](http://popoway-me.oneskyapp.com/collaboration/project/134083).  
