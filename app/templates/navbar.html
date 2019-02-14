@@ -9,19 +9,27 @@
   <noscript>
     <style>
         .noscript-banner {
-            margin: 0;
-            padding: 12px 15px;
-            color: #000;
-            text-align: center;
-            font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 13px;
-            letter-spacing: 1px;
+          margin: 0;
+          padding: 12px 15px;
+          color: #000;
+          text-align: center;
+          font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          letter-spacing: 1px;
         }
         .enable-js {
-            background-color: #FFC107; /* Dark Yellow */
+          background-color: #FFC107; /* Dark Yellow */
         }
         .cookie-banner-nojs {
-            background-color: #E336BB; /* Pink */
+          background-color: #E336BB; /* Pink */
+        }
+        .avatar-ajax {display: none;}
+        .bg-1 {padding-top: 180px;}
+        .slideanim {visibility:visible;}
+        figure noscript {
+          top: 0;
+          left: 0;
+          position: absolute;
         }
     </style>
     <p class="noscript-banner enable-js">popoway.me requires to enable JavaScript for complete experience. <a href="https://go.popoway.cloud/hteajs/" target="_blank" rel="noopener">Here is how.</a></p>
@@ -35,14 +43,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">popoway.me</a>
+      <a class="navbar-brand" href="/">popoway.me</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
+        <li><a href="/leadership">About</a></li>
+        <li><a href="/social">Social</a></li>
+        <li><a href="/career">Career</a></li>
+        <li><a href="/newsroom" data-i18n="common:nav.newsroom;[href]common:nav.newsroom_link">Newsroom</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <i class="fa fa-globe" title="Switch Language" alt="Switch Language"></i>
+            <i class="fa fa-globe" title="Switch Language" alt="Switch Language"></i> English
           </a>
           <ul class="dropdown-menu" style="letter-spacing: 1px;">
             <li class="lang-select" id="en"><a href="javascript:void(0)">en - English</a></li>
@@ -52,13 +67,6 @@
             <li class="lang-select" id="zh-TW"><a href="javascript:void(0)">zh-TW - 繁體中文</a></li>
           </ul>
         </li>
-        <li><a href="newsroom" data-i18n="common:nav.newsroom;[href]common:nav.newsroom_link">Newsroom</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who" data-i18n="common:nav.who">WHO</a></li>
-        <li><a href="#why" data-i18n="common:nav.why">WHY</a></li>
-        <li><a href="#where" data-i18n="common:nav.where">WHERE</a></li>
       </ul>
 
     </div>

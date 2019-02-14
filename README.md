@@ -43,7 +43,7 @@ To generate a variant rather than the regular release, check out to the [followi
 2. Build the app with grunt: `grunt` (html file will be in `dist/`)
 
 For debug build:
-1. run `grunt dev`
+1. run `grunt test`
 2. open `http://localhost:3000/`
 
 For a complete building and release procedure, [go to this Wiki page](https://github.com/popoway/popoway-me/wiki/Releasing).

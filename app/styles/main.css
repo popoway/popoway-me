@@ -28,19 +28,32 @@ p {
   margin-bottom: 45px;
 }
 
-.bg-1 {
+.cover-top {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* background settings */
+
+.bg-light-blue {
   background-color: #84AAFA;
   /* Light Blue */
   color: #ffffff;
 }
 
-.bg-2 {
+.bg-light-red {
+  background-color: #FFA07A;
+  /* LightSalmon */
+  color: #ffffff;
+}
+
+.bg-gray {
   background-color: #474e5d;
   /* Dark Blue */
   color: #ffffff;
 }
 
-.bg-3 {
+.bg-white {
   background-color: #ffffff;
   /* White */
   color: #555555;
@@ -50,16 +63,13 @@ p {
   color: #555555;
 }
 
-.bg-4 {
+.bg-dark {
   background-color: #2f2f2f;
   /* Black Gray */
   color: #fff;
 }
 
-.container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
+/* Bootstrap override */
 
 .navbar {
   padding-top: 10px;
@@ -76,6 +86,10 @@ p {
   color: #1abc9c !important;
 }
 
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
 
 /* Help screen reader by hiding accessible descriptions */
 
@@ -89,7 +103,6 @@ p {
   position: absolute;
   width: 1px;
 }
-
 
 /* Slide animation start */
 
@@ -107,7 +120,6 @@ p {
   /* Make the element visible */
   visibility: visible;
 }
-
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 
@@ -133,7 +145,6 @@ p {
   }
 }
 
-
 /* Circle avatar image animation start */
 
 .img-circle {
@@ -158,7 +169,6 @@ p {
   }
 }
 
-
 /* Firefox */
 
 @-moz-keyframes fadein {
@@ -169,7 +179,6 @@ p {
     opacity: 1;
   }
 }
-
 
 /* Safari and Chrome */
 
@@ -182,7 +191,6 @@ p {
   }
 }
 
-
 /* Internet Explorer */
 
 @-ms-keyframes fadein {
@@ -193,7 +201,6 @@ p {
     opacity: 1;
   }
 }
-
 ​
 /* Opera */
 

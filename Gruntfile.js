@@ -11,12 +11,38 @@ module.exports = function(grunt) {
       options: {
         separator: '\n', // new line
       },
-      dist: {
+      home: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/first.html', 'app/templates/second.html', 'app/templates/third.html',
-              'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
+              'app/templates/home.html',
+              'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/index.html',
+      },
+      leadership: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/second.html',
+              'app/templates/footer.html',
+              'app/templates/script.html'],
+        dest: 'temp/leadership.html',
+      },
+      social: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/third.html',
+              'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
+              'app/templates/script.html'],
+        dest: 'temp/social.html',
+      },
+      career: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/footer.html',
+              'app/templates/script.html'],
+        dest: 'temp/career.html',
+      },
+      contact: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/footer.html',
+              'app/templates/script.html'],
+        dest: 'temp/contact.html',
       },
     },
     copy: {
@@ -74,7 +100,11 @@ module.exports = function(grunt) {
           removeComments: false
         },
         files: {
-          'dist/index.html': 'temp/index.html'
+          'dist/index.html': 'temp/index.html',
+          'dist/leadership/index.html': 'temp/leadership.html',
+          'dist/social/index.html': 'temp/social.html',
+          'dist/career/index.html': 'temp/career.html',
+          'dist/contact/index.html': 'temp/contact.html'
         }
       },                                   // Task
       dist: {                                      // Target
@@ -86,7 +116,11 @@ module.exports = function(grunt) {
           removeComments: true
         },
         files: {                                   // Dictionary of files
-          'dist/index.html': 'temp/index.html'      // 'destination': 'source'
+          'dist/index.html': 'temp/index.html',
+          'dist/leadership/index.html': 'temp/leadership.html',
+          'dist/social/index.html': 'temp/social.html',
+          'dist/career/index.html': 'temp/career.html',
+          'dist/contact/index.html': 'temp/contact.html'
         }
       }
     },
@@ -128,7 +162,12 @@ module.exports = function(grunt) {
           banner: '<%= HTMLbanner %>'
         },
         files: {
-          src: [ 'dist/index.html' ]
+          src: [ 'dist/index.html',
+                 'dist/leadership/index.html',
+                 'dist/social/index.html',
+                 'dist/career/index.html',
+                 'dist/contact/index.html'
+               ]
         }
       },
       HTMLdev: {
@@ -137,7 +176,12 @@ module.exports = function(grunt) {
           banner: '<%= HTMLbanner %><%= livereloadbanner %>'
         },
         files: {
-          src: [ 'dist/index.html' ]
+          src: [ 'dist/index.html',
+                 'dist/leadership/index.html',
+                 'dist/social/index.html',
+                 'dist/career/index.html',
+                 'dist/contact/index.html'
+               ]
         }
       },
       JS: {
@@ -156,7 +200,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       dev: {
-        files: ['app/**/*.*'],
+        files: ['app/**/*.*', 'Gruntfile.js'],
         tasks: ['dev']
       }
     }
@@ -183,7 +227,7 @@ module.exports = function(grunt) {
     'gitinfo',
     'uglify:dev',
     'copy:dev-css',
-    'concat:dist',
+    'concat',
     'htmlmin:dev',
     'usebanner:HTMLdev',
     'usebanner:JS',
@@ -196,7 +240,7 @@ module.exports = function(grunt) {
     'gitinfo',
     'uglify:dist',
     'cssmin:dist',
-    'concat:dist',
+    'concat',
     'htmlmin:dist',
     'usebanner:HTML',
     'usebanner:JS',
@@ -209,7 +253,7 @@ module.exports = function(grunt) {
     'gitinfo',
     'uglify:dist',
     'cssmin:dist',
-    'concat:dist',
+    'concat',
     'htmlmin:dist',
     'usebanner:HTML',
     'usebanner:JS',
@@ -224,7 +268,7 @@ module.exports = function(grunt) {
   ]);
 
   // entry point tasks
-  grunt.registerTask('default', 'Default: build dev version', ['dev']);
+  grunt.registerTask('default', 'Default: build and test dev version', ['test']);
   grunt.registerTask('test', 'test: build and test dev version', ['dev', 'server']);
   grunt.registerTask('dev', 'dev: build dev version', ['devTask']);
   grunt.registerTask('beta', 'beta: build beta(pre-prelease) version', ['betaTask']);
