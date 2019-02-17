@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       social: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/third.html',
+              'app/templates/social.html',
               'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
               'app/templates/script.html'],
         dest: 'temp/social.html',
