@@ -32,6 +32,13 @@ module.exports = function(grunt) {
               'app/templates/script.html'],
         dest: 'temp/social.html',
       },
+      social_az: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/social-az.html',
+              'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
+              'app/templates/script.html'],
+        dest: 'temp/social-az.html',
+      },
       career: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
               'app/templates/footer.html',
@@ -103,6 +110,7 @@ module.exports = function(grunt) {
           'dist/index.html': 'temp/index.html',
           'dist/leadership/index.html': 'temp/leadership.html',
           'dist/social/index.html': 'temp/social.html',
+          'dist/social/az/index.html': 'temp/social-az.html',
           'dist/career/index.html': 'temp/career.html',
           'dist/contact/index.html': 'temp/contact.html'
         }
@@ -119,6 +127,7 @@ module.exports = function(grunt) {
           'dist/index.html': 'temp/index.html',
           'dist/leadership/index.html': 'temp/leadership.html',
           'dist/social/index.html': 'temp/social.html',
+          'dist/social/az/index.html': 'temp/social-az.html',
           'dist/career/index.html': 'temp/career.html',
           'dist/contact/index.html': 'temp/contact.html'
         }
@@ -165,6 +174,7 @@ module.exports = function(grunt) {
           src: [ 'dist/index.html',
                  'dist/leadership/index.html',
                  'dist/social/index.html',
+                 'dist/social/az/index.html',
                  'dist/career/index.html',
                  'dist/contact/index.html'
                ]
@@ -179,6 +189,7 @@ module.exports = function(grunt) {
           src: [ 'dist/index.html',
                  'dist/leadership/index.html',
                  'dist/social/index.html',
+                 'dist/social/az/index.html',
                  'dist/career/index.html',
                  'dist/contact/index.html'
                ]
