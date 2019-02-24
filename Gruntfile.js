@@ -41,12 +41,14 @@ module.exports = function(grunt) {
       },
       career: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/contact.html',
               'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/career.html',
       },
       contact: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/contact.html',
               'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/contact.html',
