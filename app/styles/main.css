@@ -18,10 +18,11 @@ p {
   font-size: 14px;
 }
 
-.cover-top {
-  padding-top: 70px;
-  padding-bottom: 70px;
+.home-cover {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
+
 .ver-binding {
   color: #555;
   font-size: 12px;
@@ -64,14 +65,14 @@ p {
   color: #555555;
 }
 
-.bg-3-servicename {
-  color: #555555;
-}
-
 .bg-dark {
   background-color: #2f2f2f;
   /* Black Gray */
   color: #fff;
+}
+
+.bg-3-servicename {
+  color: #555555;
 }
 
 /* Bootstrap override */
@@ -91,11 +92,21 @@ p {
   color: #1abc9c !important;
 }
 
+#home, #social, #social-az {
+  padding-top: 70px;
+}
+
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 footer ul {
@@ -160,6 +171,8 @@ footer ul {
 /* Circle avatar image animation start */
 
 .img-circle {
+  margin-top: 36px;
+  margin-bottom: 36px;
   display: inline;
   -webkit-animation: fadein 0.8s;
   /* Safari and Chrome */
