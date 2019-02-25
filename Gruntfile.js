@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       leadership: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/second.html',
+              'app/templates/leadership.html',
               'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/leadership.html',
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
       },
       career: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/contact.html',
+              'app/templates/career.html',
               'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/career.html',
