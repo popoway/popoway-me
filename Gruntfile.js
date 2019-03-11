@@ -18,12 +18,33 @@ module.exports = function(grunt) {
               'app/templates/script.html'],
         dest: 'temp/index.html',
       },
+      career: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/career.html',
+              'app/templates/footer.html',
+              'app/templates/script.html'],
+        dest: 'temp/career.html',
+      },
+      contact: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/contact.html',
+              'app/templates/footer.html',
+              'app/templates/script.html'],
+        dest: 'temp/contact.html',
+      },
       leadership: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
               'app/templates/leadership.html',
               'app/templates/footer.html',
               'app/templates/script.html'],
         dest: 'temp/leadership.html',
+      },
+      shop_payment_method: {
+        src: ['app/templates/head.html', 'app/templates/navbar.html',
+              'app/templates/shop-payment-method.html',
+              'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
+              'app/templates/script.html'],
+        dest: 'temp/shop_payment_method.html',
       },
       social: {
         src: ['app/templates/head.html', 'app/templates/navbar.html',
@@ -38,20 +59,6 @@ module.exports = function(grunt) {
               'app/templates/footer.html', 'app/templates/menu/wechat-qr-popup.html',
               'app/templates/script.html'],
         dest: 'temp/social-az.html',
-      },
-      career: {
-        src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/career.html',
-              'app/templates/footer.html',
-              'app/templates/script.html'],
-        dest: 'temp/career.html',
-      },
-      contact: {
-        src: ['app/templates/head.html', 'app/templates/navbar.html',
-              'app/templates/contact.html',
-              'app/templates/footer.html',
-              'app/templates/script.html'],
-        dest: 'temp/contact.html',
       },
     },
     copy: {
@@ -110,11 +117,12 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/index.html': 'temp/index.html',
-          'dist/leadership/index.html': 'temp/leadership.html',
-          'dist/social/index.html': 'temp/social.html',
-          'dist/social/az/index.html': 'temp/social-az.html',
           'dist/career/index.html': 'temp/career.html',
-          'dist/contact/index.html': 'temp/contact.html'
+          'dist/contact/index.html': 'temp/contact.html',
+          'dist/leadership/index.html': 'temp/leadership.html',
+          'dist/shop/payment-method/index.html': 'temp/shop_payment_method.html',
+          'dist/social/index.html': 'temp/social.html',
+          'dist/social/az/index.html': 'temp/social-az.html'
         }
       },                                   // Task
       dist: {                                      // Target
@@ -127,11 +135,12 @@ module.exports = function(grunt) {
         },
         files: {                                   // Dictionary of files
           'dist/index.html': 'temp/index.html',
-          'dist/leadership/index.html': 'temp/leadership.html',
-          'dist/social/index.html': 'temp/social.html',
-          'dist/social/az/index.html': 'temp/social-az.html',
           'dist/career/index.html': 'temp/career.html',
-          'dist/contact/index.html': 'temp/contact.html'
+          'dist/contact/index.html': 'temp/contact.html',
+          'dist/leadership/index.html': 'temp/leadership.html',
+          'dist/shop/payment-method/index.html': 'temp/shop_payment_method.html',
+          'dist/social/index.html': 'temp/social.html',
+          'dist/social/az/index.html': 'temp/social-az.html'
         }
       }
     },
@@ -174,11 +183,12 @@ module.exports = function(grunt) {
         },
         files: {
           src: [ 'dist/index.html',
-                 'dist/leadership/index.html',
-                 'dist/social/index.html',
-                 'dist/social/az/index.html',
                  'dist/career/index.html',
-                 'dist/contact/index.html'
+                 'dist/contact/index.html',
+                 'dist/leadership/index.html',
+                 'dist/shop/payment-method/index.html',
+                 'dist/social/index.html',
+                 'dist/social/az/index.html'
                ]
         }
       },
@@ -189,11 +199,12 @@ module.exports = function(grunt) {
         },
         files: {
           src: [ 'dist/index.html',
-                 'dist/leadership/index.html',
-                 'dist/social/index.html',
-                 'dist/social/az/index.html',
                  'dist/career/index.html',
-                 'dist/contact/index.html'
+                 'dist/contact/index.html',
+                 'dist/leadership/index.html',
+                 'dist/shop/payment-method/index.html',
+                 'dist/social/index.html',
+                 'dist/social/az/index.html'
                ]
         }
       },
