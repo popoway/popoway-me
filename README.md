@@ -44,7 +44,8 @@ To generate a variant rather than the regular release, check out to the [followi
 
 For debug build:
 1. run `grunt test`
-2. open `http://localhost:3000/`
+2. follow onscreen instructions
+3. you may manually go to `http://localhost:3000/`, in case the debug window doesn't open automatically 
 
 For a complete building and release procedure, [go to this Wiki page](https://github.com/popoway/popoway-me/wiki/Releasing).
 
