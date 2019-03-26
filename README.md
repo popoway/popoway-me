@@ -58,4 +58,4 @@ You can also help the project or say "thank you" with this button:
 
 popoway-me: [MIT](https://popoway.mit-license.org/)
 
-popoway.me is made possible by the [popoway-me](https://github.com/popoway/popoway-me) open source project and [other open source software](https://github.com/popoway/popoway-me/wiki/Credits).
+[popoway.me](https://popoway.me) is made possible by the [popoway-me](https://github.com/popoway/popoway-me) open source project and [other open source software](https://github.com/popoway/popoway-me/wiki/Credits).
