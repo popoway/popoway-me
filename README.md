@@ -7,7 +7,7 @@
 [![GitHub language count](https://img.shields.io/github/languages/count/popoway/popoway-me.svg)](https://github.com/popoway/popoway-me/search?l=JavaScript&type=Code)
 [![Travis (.com)](https://img.shields.io/travis/com/popoway/popoway-me.svg)](https://travis-ci.com/popoway/popoway-me/builds/)
 [![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://popoway.mit-license.org/)  
-A fast, responsive, colorful webpage, which actually is popoway's personal introduction.  
+A fast, responsive, brilliant website, which actually is popoway's personal introduction.  
 ![Screenshot of popoway.me](img/desktop-preview.png)
 
 ## Quick Links
