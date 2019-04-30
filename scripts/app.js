@@ -1,5 +1,5 @@
 /*!
- * This file is part of popoway-me v2.0.0-beta.3 (670590c) (https://popoway.me/)
+ * This file is part of popoway-me v2.0.0-beta.4 (bac245c) (https://popoway.me/)
  * Copyright 2019 The popoway-me Authors (https://github.com/popoway/popoway-me/graphs/contributors)
  * Licensed under the MIT License. (https://github.com/popoway/popoway-me/blob/master/LICENSE)
  */
