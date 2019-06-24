@@ -24,13 +24,15 @@ $(document).ready(function(){
   });
 });
 
+// Slide animation: Animated scroll to fade in
 $(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;
-
     var winTop = $(window).scrollTop();
     if (pos < winTop + 600) {
-      $(this).addClass("slide");
+      $(this).removeClass("slideanim");
+      $(this).addClass("animated");
+      $(this).addClass("fadeInUp");
     }
   });
 });
