@@ -50,53 +50,53 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-// Initialize i18next module
-function readyi18n( jQuery ) {
-  // Code to run when the document is ready.
-  //import i18next from 'i18next';
-  i18next
-    //import Backend from 'i18next-xhr-backend';
-    //import LngDetector from 'i18next-browser-languagedetector';
-    .use(i18nextXHRBackend)
-    .use(i18nextBrowserLanguageDetector)
-    .init({
-      fallbackLng: 'en',
-      debug: true,
-      backend: {
-        // for all available options read the backend's repository readme file
-        loadPath: '/locales/{{lng}}/{{ns}}.json',
-        crossDomain: true
-      },
-      ns: ['common', 'portfolio'],
-      defaultNS: 'portfolio'
-    }, function(err, t) {
-      // init set content
-      jqueryI18next
-        .init(i18next, $, {
-          tName: 't', // --> appends $.t = i18next.t
-          i18nName: 'i18n', // --> appends $.i18n = i18next
-          handleName: 'localize', // --> appends $(selector).localize(opts);
-          selectorAttr: 'data-i18n', // selector for translating elements
-          targetAttr: 'i18n-target', // data-() attribute to grab target element to translate (if diffrent then itself)
-          optionsAttr: 'i18n-options', // data-() attribute that contains options, will load/set if useOptionsAttr = true
-          useOptionsAttr: false, // see optionsAttr
-          parseDefaultValueFromContent: true // parses default values from content ele.val or ele.text
-        });
-      // start localizing, details:
-      // https://github.com/i18next/jquery-i18next#usage-of-selector-function
-      updateContent();
-      function updateContent() {
-        $('#cookiebanner').localize();
-        $('.ctrl').localize();
-        $('.nav').localize();
-        $('.container-fluid').localize();
-        $('#WeChatQRPopup').localize();
-      }
-      $('.lang-select').click(function() {
-        i18next.changeLanguage(this.id, function() {
-           updateContent();
-        });
-      })
-    });
-}
-$(document).ready( readyi18n );
+// // Initialize i18next module
+// function readyi18n( jQuery ) {
+//   // Code to run when the document is ready.
+//   //import i18next from 'i18next';
+//   i18next
+//     //import Backend from 'i18next-xhr-backend';
+//     //import LngDetector from 'i18next-browser-languagedetector';
+//     .use(i18nextXHRBackend)
+//     .use(i18nextBrowserLanguageDetector)
+//     .init({
+//       fallbackLng: 'en',
+//       debug: true,
+//       backend: {
+//         // for all available options read the backend's repository readme file
+//         loadPath: '/locales/{{lng}}/{{ns}}.json',
+//         crossDomain: true
+//       },
+//       ns: ['common', 'portfolio'],
+//       defaultNS: 'portfolio'
+//     }, function(err, t) {
+//       // init set content
+//       jqueryI18next
+//         .init(i18next, $, {
+//           tName: 't', // --> appends $.t = i18next.t
+//           i18nName: 'i18n', // --> appends $.i18n = i18next
+//           handleName: 'localize', // --> appends $(selector).localize(opts);
+//           selectorAttr: 'data-i18n', // selector for translating elements
+//           targetAttr: 'i18n-target', // data-() attribute to grab target element to translate (if diffrent then itself)
+//           optionsAttr: 'i18n-options', // data-() attribute that contains options, will load/set if useOptionsAttr = true
+//           useOptionsAttr: false, // see optionsAttr
+//           parseDefaultValueFromContent: true // parses default values from content ele.val or ele.text
+//         });
+//       // start localizing, details:
+//       // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+//       updateContent();
+//       function updateContent() {
+//         $('#cookiebanner').localize();
+//         $('.ctrl').localize();
+//         $('.nav').localize();
+//         $('.container-fluid').localize();
+//         $('#WeChatQRPopup').localize();
+//       }
+//       $('.lang-select').click(function() {
+//         i18next.changeLanguage(this.id, function() {
+//            updateContent();
+//         });
+//       })
+//     });
+// }
+// $(document).ready( readyi18n );

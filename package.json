@@ -1,7 +1,7 @@
 {
   "name": "popoway-me",
-  "version": "2.0.0-beta.5",
-  "description": "stupid personal introduction",
+  "version": "2.0.0-rc.1",
+  "description": "popoway's nest on the net",
   "main": "Gruntfile.js",
   "devDependencies": {
     "grunt": "^1.0.3",
@@ -34,7 +34,7 @@
   },
   "author": {
     "name": "popoway",
-    "email": "popoway@foxmail.com",
+    "email": "hello@popoway.cloud",
     "url": "https://popoway.me/"
   },
   "license": "MIT",
