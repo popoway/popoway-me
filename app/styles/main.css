@@ -1,0 +1,149 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+a:link,
+a:visited {
+  color: #A6A6A6;
+  font-style: normal;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.fa-heart {
+  font-size: 14px;
+}
+
+.home-cover {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.ver-binding {
+  color: #555;
+  font-size: 12px;
+}
+.social-logo-medium {
+  color: #2f2f2f;
+  /* Black Gray */
+  font-size: 50px;
+}
+
+.social-logo-main {
+  padding-top: 15px;
+  font-size: 8em;
+  text-align: center;
+}
+
+/* background settings */
+
+.bg-light-blue {
+  background-color: #84AAFA;
+  /* Light Blue */
+  color: #ffffff;
+}
+
+.bg-light-blue a {
+  color: #2f2f2f;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+.bg-light-red {
+  background-color: #FFA07A;
+  /* LightSalmon */
+  color: #ffffff;
+}
+
+.bg-gray {
+  background-color: #474e5d;
+  /* Dark Blue */
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  /* White */
+  color: #555555;
+}
+
+.bg-dark {
+  background-color: #2f2f2f;
+  /* Black Gray */
+  color: #fff;
+}
+
+.bg-3-servicename {
+  color: #555555;
+}
+
+/* Bootstrap override */
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  border-color: transparent;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+#home, #social, #social-az, #career, #contact, #shop-payment-method {
+  padding-top: 70px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+/* Help screen reader by hiding accessible descriptions */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Slide animation start */
+
+.slideanim {
+  visibility: hidden;
+}
+
+/* Circle avatar image animation start */
+
+.img-circle {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  display: inline;
+}
