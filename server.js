@@ -4,7 +4,7 @@ var path = require('path');
 var PORT = process.env.PORT || 3000;
 
 express()
-  .use(express.static('dist'))
+  .use(express.static('./'))
   .listen(PORT, onListen);
 
 function onListen() {

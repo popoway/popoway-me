@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>popoway.me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <!--
      _ __   ___  _ __   _____      ____ _ _   _
     | '_ \ / _ \| '_ \ / _ \ \ /\ / / _` | | | |
@@ -12,61 +14,26 @@
     | |         | |                        __/ |
     |_|         |_|                       |___/
     Source available on: https://github.com/popoway/popoway-me -->
-    <style media="screen">
-      a {
-        color: black;
-      }
-      body {
-        background-color: #439FEF;
-      }
-      .dark-mode-indicator {
-        cursor: pointer;
-      }
-      .dark-mode-indicator::after {
-        content: 'Dark Mode: Off';
-        font-size: 0.67em;
-      }
-    </style>
-    <style media="screen and (prefers-color-scheme: dark)">
-      a {
-        color: aliceblue;
-      }
-      h1, h2, li, p, span, ul {
-        color: white;
-      }
-      body {
-        background-color: #08365E;
-      }
-      .dark-mode-indicator::after {
-        content: 'Dark Mode: On';
-      }
-    </style>
   </head>
   <body>
-    <h1>popoway.me</h1>
-    <h2>Where is the original page?</h2>
-    <p>It is currrently under construction. The new version is coming in early 2021.</p>
-    <p>In the meantime, check these pages as alternatives:</p>
+    <h1>
+      <img src="./2021v2_128px.png" alt="Avatar of popoway" id="avatar">
+      <span>popoway</span>
+    </h1>
+    <noscript><p id="nojsHint">JavaScript is required for complete functionality and optimized experience on this website. Learn how to enable JavaScript in your web browser <a href="https://go.popoway.cloud/hteajs">here</a>.</p></noscript>
+    <p>Hello! My name is Ming Lei and I am a fulltime software engineer and a recent computer science college grad. I love coding, cooking, and climbing.</p>
+    <p>Here are something about me:</p>
     <ul>
       <li><a href="https://go.popoway.cloud/portfolio">Portfolio</a></li>
       <li><a href="https://popoway.me/newsroom">Newsroom</a></li>
-      <li><a href="https://go.popoway.cloud/sconli">LinkedIn</a></li>
-      <li><a href="https://go.popoway.cloud/scongh">GitHub</a></li>
-      <li><a href="https://go.popoway.cloud/sconis">Instagram</a></li>
     </ul>
-    <p>&copy; 2021 popoway. All rights reserved.</p>
+    <p>You can find more of my online representation below:</p>
+    <input type="text" id="accountSearch" placeholder="Search online services">
+    <ul id="accounts" class="fa-ul">
+      <li>Loading...</li>
+    </ul>
+    <p>&copy; <span id="footerYear"></span> popoway. All rights reserved.</p>
     <span class="dark-mode-indicator" title="This follows system settings"><span>
-    <script type="text/javascript">
-      function hack() {
-        console.log('%cHi there!', 'color:white; background:#439FEF; font-size: 16pt');
-        console.log('%cLove to hack? Connect with me on LinkedIn: ming.fyi/linkedin or Email me at hello@popoway.cloud', 'font-size: 12pt');
-      }
-      window.addEventListener('DOMContentLoaded', (event) => {
-        hack();
-      });
-      document.querySelector('.dark-mode-indicator').addEventListener('click', (event) => {
-        window.alert('To toggle dark mode, switch light/dark appearance settings on your supported system.');
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
