@@ -14,7 +14,7 @@ function accountSearchInit() {
     window.setTimeout( () => {
       // console.log(document.querySelector('#accountSearch').value);
       accountPopulate(document.querySelector('#accountSearch').value);  
-    }, 1); // allow 1ms for browser to update value before grabing it
+    }, 20); // allow 20ms for browser to update value before grabing it
   });
   document.querySelector('#accountSearch').value = '';
 }

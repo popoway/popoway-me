@@ -8,7 +8,6 @@
 [![Travis (.com)](https://img.shields.io/travis/com/popoway/popoway-me.svg)](https://travis-ci.com/popoway/popoway-me/builds/)
 [![license](https://img.shields.io/github/license/popoway/popoway-me.svg)](https://popoway.mit-license.org/)  
 A fast, responsive, brilliant website, which actually is popoway's personal introduction.  
-![Screenshot of popoway.me](img/desktop-preview.png)
 
 ## Quick Links
 
@@ -51,12 +50,14 @@ For a complete building and release procedure, [go to this Wiki page](https://gi
 
 ## Contributing
 
-Give me [inspiration](mailto:popoway@popoway.cloud), or help [translate it](http://popoway-me.oneskyapp.com/collaboration/project/134083).  
-You can also help the project or say "thank you" with this button:  
-[<img src="img/paypal-donate.png" alt="Donate with PayPal" width="100">](https://www.paypal.me/popoway)  
+Feel free to open a pull request for your ideas on how this page can be improved.
+
+To report a security vulnerability, please review the [Security Policy](https://github.com/popoway/popoway-me/blob/master/SECURITY.md).
+
+## Privacy
+
+This page uses cookies from Cloudflare, Google and popowayCloud to deliver its services and to analyze traffic. popoway respects your privacy. Please review the [Privacy Policy](https://github.com/popoway/popoway-me/blob/master/PRIVACY.md) for more information on how your data is handled.
 
 ## License
 
-popoway-me: [MIT](https://popoway.mit-license.org/)
-
-[popoway.me](https://popoway.me) is made possible by the [popoway-me](https://github.com/popoway/popoway-me) open source project and [other open source software](https://github.com/popoway/popoway-me/wiki/Credits).
+[MIT](https://popoway.mit-license.org/)
