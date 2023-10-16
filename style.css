@@ -7,6 +7,17 @@
   }
   body {
     background-color: #439FEF;
+    width: 80%;
+    margin: auto;
+    padding: 0 10px;
+  }
+  h1 > span {
+    vertical-align: super;
+  }
+  input {
+    border-radius: 5px;
+    font-size: larger;
+    width: 500px;
   }
   .dark-mode-indicator {
     cursor: pointer;
@@ -15,8 +26,27 @@
     content: 'Dark Mode: Off';
     font-size: 0.67em;
   }
+  .fa-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+  .fa-ul > li {
+    display: block;
+    text-align: center;
+    width: 130px;
+  }
+  .fa-ul > li > a {
+    display: block;
+  }
+  /* first div */
+  .fa-ul > li > a > div:first-child {
+    margin: 10px 0 5px 0;
+  }
   #avatar {
-    height: 24px;
+    height: 32px;
+    border-radius: 5px;
   }
   #nojsHint {
     border-width: 2px;
@@ -30,8 +60,23 @@
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  input {
+    width: 90%;
+  }
   li {
     margin: 15px 0;
+  }
+  .ca-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  #accountSearchWrapper {
+    text-align: center;
   }
 }
 

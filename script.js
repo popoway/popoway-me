@@ -35,17 +35,21 @@ function accountPopulate(searchParam) {
     const condition = (searchParam != '') ? account.service.toLowerCase().includes(searchParam.toLowerCase()) : account.visible;
     if (condition) {
       let item = document.createElement('li');
-      let icon = document.createElement('span');
-      icon.classList.add('fa-li');
-      let iconI = document.createElement('i');
-      iconI.className = account.icon;
-      icon.appendChild(iconI);
-      item.appendChild(icon);
       let link = document.createElement('a');
       item.appendChild(link);
-      link.textContent = account.service;
       link.href = `${pclss}${account.pclss}`;
       link.target = '_blank';
+      let icon = document.createElement('div');
+      // icon.classList.add('fa-li');
+      let iconI = document.createElement('i');
+      iconI.className = account.icon;
+      iconI.classList.add('fa-fw');
+      iconI.classList.add('fa-xl');
+      icon.appendChild(iconI);
+      link.appendChild(icon);
+      let text = document.createElement('div');
+      text.textContent = account.service;
+      link.appendChild(text);
       document.querySelector('#accounts').appendChild(item);  
     }
   }
